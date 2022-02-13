@@ -1,441 +1,633 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walkaholics| Complete hospital Website</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="cssn/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    
-    <!-- ChatBot -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.convform.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+	<link rel="manifest" href="manifest.json">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Medcare">
+	<meta name="apple-mobile-web-app-title" content="Drlogy">
+	<meta name="theme-color" content="#1078f2">
+	<meta name="msapplication-navbutton-color" content="#1078f2">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="msapplication-starturl" content="index.html">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Drlogy helps you to find Best/top and verified Doctors, Clinics/Hospitals, Diagnostics, Pharmacies, Agencies, Pharma, Associations &amp; Jobs near You.  Drlogy App for all your Health and Fitness solutions. ">
+	<meta property="fb:app_id" content="335528353779686"/>
+	<meta name="google-site-verification" content="6Ax3iq5dAIzusLGAzvM" />
+	<!-- facebook -->
+	<meta property="og:url" content="index.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Drlogy | Find Best Doctors, Hospitals, Diagnostics, Pharmacies &amp; Health near you" />
+	<meta property="og:description" content="Drlogy helps you to find Best/top and verified Doctors, Clinics/Hospitals, Diagnostics, Pharmacies, Agencies, Pharma, Associations &amp; Jobs near You.  Drlogy App for all your Health and Fitness solutions." />
+	<meta property="og:image" content="assets/uploads/img/general/drlogy-app/box-01.png" />
+	<!-- twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@Drlogy_" />
+	<meta property="twitter:title" content="Drlogy | Find Best Doctors, Hospitals, Diagnostics, Pharmacies &amp; Health near you" />
+	<meta property="twitter:description" content="Drlogy helps you to find Best/top and verified Doctors, Clinics/Hospitals, Diagnostics, Pharmacies, Agencies, Pharma, Associations &amp; Jobs near You.  Drlogy App for all your Health and Fitness solutions." />
+	<meta property="twitter:image:src" content="assets/uploads/img/general/drlogy-app/box-01.png" />
+	<!-- Pinterest Tag Added 01-11-2019 -->
+	<meta name="p:domain_verify" content="8e9bc1f04d8789b56645b4a9582edb07"/>
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0" />
+	<!-- , user-scalable=0 -->
+	<title>Drlogy | Find Best Doctors, Hospitals, Diagnostics, Pharmacies &amp; Health near you</title>
+	<link rel="stylesheet" href="assets/plugins-v1/common-css-js/css/bootstrap4.1.3.min.css">	
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/user-v1/img/general/apple-72x72.png">
+	<link rel="icon" type="image/png" sizes="72x72" href="assets/user-v1/img/general/android-72x72.png">
+	<link rel="icon" href="assets/user-v1/img/general/favicon.png">
+	<link rel="canonical" href="index.html" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131191870-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-131191870-1');
+	</script>
+	<link rel="stylesheet" href="assets/user-v1/css/drlogy/common/global.css"><link rel="stylesheet" href="assets/user-v1/css/drlogy/page/home_drlogy.css">	
 </head>
 <body>
-    <div class="chat_icon">
-        <i class="fa fa-comments" aria-hidden="true"></i>
-    </div>
-    
-    <div class="chat_box">
-        <div class="my-conv-form-wrapper">
-            <form action="" method="GET" class="hidden">
-    
-          <select data-conv-question="Hello! How can I help you" name="category">
-            <option value="WebDevelopment">Book an appointment ?</option>
-            <option value="DigitalMarketing">Check ur health ?</option>
-          </select>
-    
-          <div data-conv-fork="category">
-            <div data-conv-case="Book an appointment ?">
-              <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
-            </div>
-            <div data-conv-case="Check ur health?" data-conv-fork="first-question2">
-              <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
-            </div>
-          </div>
-    
-          <input type="text" name="name" data-conv-question="Please, Enter your name">
-          <input type="text" name="name" data-conv-question="What happened to ur health?">
-    
-          <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
-    
-          <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
-    
-          <select data-conv-question="Please Conform">
-            <option value="Yes" href="Calculator/health-and-fitness-calculator.html">Conform<href="Calculator/health-and-fitness-calculator.html"></href> </option>
-          </select>
-    
-          </form>
-        </div>
-    </div>
-    <!--Chatbot-->
-<!-- header section starts  -->
-
-<header class="header">
-
-    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Walkaholics </a>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#services">services</a>
-        <a href="#about">about</a>
-        <a href="#doctors">doctors</a>
-        <a href="#blogs">blogs</a>
-    </nav>
-
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="image">
-        <img src="image/home-img.svg" alt="">
-    </div>
-
-    <div class="content">
-        <h3>stay safe, stay healthy</h3>
-        <p>Keeping your body healthy is an expression of gratitude to the whole cosmos- the trees, the clouds, everything.</p>
-        <a href="https://www.instagram.com/surya._.spells/" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
-    </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- icons section starts  -->
-
-<section class="icons-container">
-
-    <div class="icons">
-        <i class="fas fa-user-md"></i>
-        <h3>140+</h3>
-        <p>doctors at work</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-users"></i>
-        <h3>1040+</h3>
-        <p>Facilites</p>
-    </div>
-
-</section>
-
-<!-- icons section ends -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading"> our <span>services</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-notes-medical"></i>
-            <h3>Book an Appointment</h3>
-            <p>Book ur appointment online with our feauture with the best doctors in the city.</p>
-            <a href="host/hospitals/index.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-ambulance"></i>
-            <h3>Fitness & Health Calculators</h3>
-            <p>If health is lost, everything is lost. Measure your health with our feature.</p>
-            <a href="Calculator/health-and-fitness-calculator.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-user-md"></i>
-            <h3>Ur health is our first priority.</h3>
-            <p>It is health that is the real wealth and not pieces of gold and silver.</p>
-            <a href="Calculator/health-and-fitness-calculator.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-
-    </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-    <h1 class="heading"> <span>about</span> us </h1>
-
-    <div class="row">
-
-        <div class="image">
-            <img src="image/about-img.svg" alt="">
-        </div>
-
-        <div class="content">
-            <h3>we take care of your healthy life</h3>
-            <p>Sometimes, mental illness is terrifying because you feel like you've lost control of your mind and nothing makes sense. It's like watching yourself on autopilot and having little to no control.</p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- doctors section starts  -->
-
-<section class="doctors" id="doctors">
-
-    <h1 class="heading"> our <span>doctors</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/doc-1.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="https://www.instagram.com/surya._.spells/" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-2.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-3.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-4.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-5.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-6.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- doctors section ends -->
-
-<!-- booking section starts   -->
-
-<section class="book" id="book">
-
-    <h1 class="heading"> <span>book</span> now </h1>    
-
-    <div class="row">
-
-        <div class="image">
-            <img src="image/book-img.svg" alt="">
-        </div>
-
-        <form action="">
-            <h3>book appointment</h3>
-            <input type="text" placeholder="your name" class="box">
-            <input type="number" placeholder="your number" class="box">
-            <input type="email" placeholder="your email" class="box">
-            <input type="date" class="box">
-            <input href="host/hospitals/index.html" type="submit" value="book now" class="btn" href="host/hospitals/index.html">
-        </form>
-
-    </div>
-
-</section>
-
-<!-- booking section ends -->
-
-<!-- review section starts  -->
-
-
-
-<!-- review section ends -->
-
-<!-- blogs section starts  -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> our <span>blogs</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 13th feb, 2022 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>1. ACE Insights Blog
-                </h3>
-                <p>The American Council on Exercise’s blog has fitness articles on a variety of topics such as yoga, strength training, and exercises for beginners. Articles are backed by guidelines and recommendations from the American Council on Exercise.
-                </p>
-                <a href="acefitness.org/education-and-resources/professional/expert-articles" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 13th feb, 2022 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>The Art of Healthy Living
-                </h3>
-                <p>The Art of Healthy Living offers fitness articles related to subjects such as exercise supplements and high-intensity interval training. It also covers food and nutrition topics and general health and well-being trends.
-
-                </p>
-                <a href="artofhealthyliving.com" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 13th feb, 2022 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>Eating Bird Food</h3>
-                <p>Brittany Mullins, a holistic nutritionist, runs this site and shares healthy recipe creations focused on whole foods. She also features articles on wellness and workouts.
-
-                </p>
-                <a href="eatingbirdfood.com" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> about </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> doctors </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> book </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> blogs </a>
-        </div>
-
-        <div class="box">
-            <h3>our services</h3>
-            <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +91 9003529089 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> cssuryanarayanan@gmail.com </a>
-            <a href="#"> <i class="fas fa-envelope"></i> suryacs@gmail.com </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Salem, India - 636016 </a>
-        </div>
-
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
-        </div>
-
-    </div>
-
-    <div class="credit"> created by <span><b>Zollars</b></span> | all rights reserved </div>
-
-</section>
-
-<!-- footer section ends -->
-
-<!--Chatbot-->
-<script src="//code.tidio.co/axj3aehwvg52ygu24olgkyulqsyfqs9e.js" async></script>
+	
+<div class="pc-jut lg-y-h">
+	<div class="container">
+			<div class="row dr-hedr1">
+				<a data-toggle="collapse" href="#dr-sidbar" aria-label="menu"><i class="material-icons dr-sid-i">menu</i></a>
+				<div class="dr-lo-g">
+					<a href="index.html" class="dr-logo"><img class="baadu sentence" alt="" src="baadu"><b>Med</b>Care<span class="drr-1">®</span></a>
+				</div>
+				<div class="hd-pry">For Professionals<i class="material-icons">keyboard_arrow_down</i>
+					 <ul class="drh-pr pc-jut">
+						<li> <a href="clinic-saas.html">Clinic SAAS<span class="cl-011">New</span></a></li>
+<li> <a href="hospital-saas.html">Hospital SAAS<span class="cl-011">New</span></a></li>
+<li> <a href="ophthalmology-software.html">Ophthalmology SAAS<span class="cl-011">New</span></a></li>
+<li> <a href="dental-software.html">Dental SAAS<span class="cl-011">New</span></a></li>
+<li> <a href="pathology-lab-software.html">Lab & Diagnostic SAAS<span class="cl-011">New</span></a></li>
+<li> <a href="pharmacy-saas.html">Pharmacy SAAS<span class="cl-011">New</span></a></li>
+<li> <a href="agency-saas.html">Agency SAAS<span class="cl-011">New</span></a></li>
+<li> <a href="professionals/doctor-hospital-clinic-profile.html">Doctor Profile Listing</a></li>
+<li> <a href="professionals/diagnostic-lab-imaging-centre-profile.html">Diagnostic Profile Listing</a></li>
+<li> <a href="professionals/pharmacy-medical-store-profile.html">Pharmacy Profile Listing</a></li>
+<li> <a href="professionals/pharma-surgical-manufacturer-profile.html">Pharma Profile Listing</a></li>
+<li> <a href="professionals/association-profile.html">Associations Profile Listing</a></li>
+<li> <a href="professionals/agency-stockist-distributer-profile.html">Agency Profile Listing</a></li>
+					 </ul>
+				</div>	
+				<button class='btn dr-h-bt unauth-nav'>Login</button><!-- Login Modal -->
+<div class="modal login-modal" id="loginm" tabindex="-1" role="dialog">
+	<div class="modal-dialog l-m-inw" role="document">
+		<!-- Modal content-->
+		<div class="modal-content pc-jut">
+			<div class="modal-body">
+						<div class="top" >
+							<div class="row dr-gi1">
+								<div class="dr-login auth-link nav-active">Login</div>
+								<div class="dr-login" id="seprator">&nbsp;|&nbsp;</div>
+								<div class="dr-login reg-link">Register</div>
+							</div>
+						</div>
+
+						<!-- <div class="top-forgot-pass">
+							<div class=""><span>Forgot</span></div>
+							<div class="">Forgot Password</div>
+							<div class=""><span>Forgot</span></div>
+						</div> -->
+				<div class="">
+					<!--  -->
+					<form class="login-form row">
+						<input type="hidden" class="token" name="f09gth78mvaiysuhraldgvbrl450y112yg" value="626800d1a3548361f9ca91a452ede055" />
+						<!--  -->
+						
+							<div class="input-field">
+								<input type="tel" class="xq-yz" name="authMob" id="authMob" maxlength="10">
+								<label for="authMob">Mobile Number</label>
+							</div>
+							<div class="input-field">
+								<input type="password" name="authPass" id="authPass" autocomplete="off" class="xq-0z" />
+								<label for="authPass">Password</label>
+							</div>
+							<div>
+								<span class="text-primary forgot-pass">Forgot Password ?</span>
+								<button type="submit" class="btn log-mo1">Login</button>
+							</div>
+					</form>
+
+					<form class="reg-form row">
+						<input type="hidden" class="token" name="f09gth78mvaiysuhraldgvbrl450y112yg" value="626800d1a3548361f9ca91a452ede055" />
+						
+							<div class="input-field">
+								<input type="text" name="regFirstName" id="regFirstName">
+								<label for="regFirstName">First Name</label>
+							</div>
+
+							<div class="input-field">
+								<input type="text" name="regSurname" id="regSurname">
+								<label for="regSurname">Surname</label>
+							</div>
+							<div class="input-field">
+								<input type="text" name="regMob" id="regMob" class="xq-yz" maxlength="10">
+								<label for="regMob">Mobile Number (+91)</label>
+							</div>
+							<div class="input-field">
+								<input type="text" name="regEmail" id="regEmail" class="xq-0z">
+								<label for="regEmail">Email ID</label>
+							</div>
+							<div class="input-field">
+								<input type="password" name="regPass" id="regPass" autocomplete="off" class="xq-0z" />
+								<label for="regPass">Password</label>
+							</div>
+							<div>
+								<p class="r-policy input-field">By clicking, I agree with drlogy <a href="terms.html" target="_blank">Terms of Use</a> &amp; <a href="privacy.html" target="_blank">Privacy Policy.</a></p>
+								<button type="submit" class="btn log-mo1">Let's Start Healthy</button>
+							</div>
+					</form>
+
+					<form class="forgot-pass-form row">
+						<input type="hidden" class="token" name="f09gth78mvaiysuhraldgvbrl450y112yg" value="626800d1a3548361f9ca91a452ede055" />
+						
+							<div class="input-field">
+								<input type="text" name="forgotPassMob" id="forgotPassMob" class="xq-yz" maxlength="10">
+								<label for="forgotPassMob">Mobile Number</label>
+							</div>						
+							<div class="input-field">
+								<input type="password" name="forgotPassNew" id="forgotPassNew" autocomplete="off" class="xq-0z" />
+								<label for="forgotPassNew">Password</label>
+							</div>					
+							<div class="input-field">
+								<input type="password" name="forgotPassConf" id="forgotPassConf" autocomplete="off" class="xq-0z" />
+								<label for="forgotPassConf">Confirm Password</label>
+							</div>						
+							<div>
+								<p class="text-primary back-to-login">Back</p>
+								<button type="submit" class="btn log-mo1">Submit</button>
+							</div>
+					
+					</form>
+
+					<form class="otp-form row">						
+							<div class="input-field msg-col">
+								<input type="hidden" class="token" name="f09gth78mvaiysuhraldgvbrl450y112yg" value="626800d1a3548361f9ca91a452ede055" />
+								<input type="hidden" id="target">
+								<input type="hidden" id="resendLink">
+							</div>					
+							<div class="input-field">
+								<input type="text" name="otp" id="otp" autocomplete="off" class="xq-yz otp">
+								<label for="otp">OTP</label>
+							</div>					
+							<div>
+								<p class="text-primary pull-right pointer resend-otp">Resend OTP</p>
+								<button type="submit" class="btn log-mo1">Submit</button>
+							</div>
+					</form>
+
+					<form class="profile-form">
+						<div class="row">
+							<div class="input-field msg-col">
+								<input type="hidden" class="token" name="f09gth78mvaiysuhraldgvbrl450y112yg" value="626800d1a3548361f9ca91a452ede055" />
+								<input type="hidden" name="userId" id="userId">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Practice Modal -->
+<div class="modal fade mw400" id="practice-modal" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="process-bar">
+				<div class="text-center process-wrapper">
+					<div class="preloader-wrapper big active">
+						<div class="spinner-layer spinner-blue-only">
+							<div class="circle-clipper left">
+							<div class="circle"></div>
+							</div><div class="gap-patch">
+							<div class="circle"></div>
+							</div><div class="circle-clipper right">
+							<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="practice-header">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3"><span>Forgot</span></div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 text-center nav-active">Practice</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-3"><span>Forgot</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<form class="col-lg-12 col-md-12 col-sm-12" id="practice-form">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<select name="drPractices" id="drPractices">
+									<option value="" disabled selected>Doctor, Diagnostic, Pharmacy, etc.</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<input type="text" name="practiceName" id="practiceName">
+								<label for="practiceName" id="lblPracticeName">Name</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<input type="text" name="practiceMob" id="practiceMob" class="xq-yz" maxlength="10">
+								<label for="practiceMob">Mobile Number</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<input type="text" name="practiceEmail" id="practiceEmail" class="xq-0z">
+								<label for="practiceEmail">Email ID</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<input type="text" name="practiceReference" id="practiceReference">
+								<label for="practiceReference">Reference e.g. Google, Friends, etc</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<button type="submit" class="btn btn-primary btn-block waves-effect waves-light">Submit</button>
+							</div>
+						</div>
+					</form>
+
+					<form class="col-lg-12 col-md-12 col-sm-12" id="practice-otp-form">
+						<div class="row">
+							<div class="input-field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<input type="text" name="otp" id="prac_otp" class="xq-yz otp">
+								<label for="prac_otp">OTP</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<span class="text-primary pull-right pointer practice-otp-resend">Resend OTP</span>
+								<button type="submit" class="btn btn-primary btn-block waves-effect waves-light">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Practice Modal Over -->			</div>
+		   <ul class="collapse pc-jut dr-sidbar" id="dr-sidbar">
+			  <li>
+				 <a href="health-and-fitness-app-drlogy-app.html">Download Drlogy App</a>
+			  </li>
+			  			  <li><a href="doctors.html">Doctors</a></li>
+			  <li><a href='hospitals.html'>Clinics/Hospitals</a></li>
+			  <li><a href='diagnostics.html'>Diagnostics</a></li>
+			  <li><a href='pharmacys.html'>Pharmacies</a></li>
+			  <li><a href='pharmas.html'>Pharmas</a></li>
+			  <li><a href='associations.html'>Associations</a></li>
+			  <li><a href='food-facts.html'>Food Facts</a></li>
+			  <li><a href='health-and-fitness-calculator/index.html'>Fitness & Health Calculator</a></li>
+			  <li><a href='medical-abbreviations/a.html'>Medical Abbreviations</a></li>
+			  <li><a href='medical-dictionary/a.html'>Medical Dictionary</a></li>
+			  <li><a href='job.html'>Jobs</a></li>
+			  <li><a href='professionals/doctor-hospital-clinic-profile.html'>For Professtionals</a></li>
+			  <li><a href="about.html">About Us</a></li>
+			  <li> <a href="clinic-saas.html">Clinic Software <span class="cl-011" style="float: none;">New</span></a></li>
+<li><a class="unauth-nav">Contact Us</a></li>		  </ul>
+	 </div>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Drlogy","description":"Drlogy helps you to find Best/top and verified Doctors, Clinics/Hospitals, Diagnostics, Pharmacies, Agencies, Pharma, Associations &amp; Jobs near You.  Drlogy App for all your Health and Fitness solutions.","url":"https://drlogy.com","logo":"","foundingDate":"2019","address":{"@type":"PostalAddress","streetAddress":"Balaji Hall,","addressLocality":"150 Feet Ring Road","addressRegion":"Rajkot","postalCode":"360004","addressCountry":"INDIA"},"contactPoint":[{"@type":"ContactPoint","telephone":"+91 8866 702 121","contactType":"Customer Service ( Call Center)","email":"hello@drlogy.com"}],"sameAs":["https://youtube.com/channel/UCY02NzH5yGQnuF4e9D0N_EQ","https://facebook.com/Drlogy-245225533088589/","https://twitter.com/Drlogy_/","https://linkedin.com/company/drlogy","https://instagram.com/drlogy_/"]}</script>
 <script type="text/javascript">
-	portfolioList = document.querySelectorAll('.portfolio-box');
-	portfolioList.forEach(function(portfolioPic) {
-		portfolioPic.addEventListener('click',function(){
-			bg = this.style.backgroundImage;
-			document.getElementById('port_pop_pic_bg').classList.add("active")
-			document.getElementById('port_pop_pic').style.backgroundImage = bg
-			document.getElementById('port_pop_pic').classList.add("active")
-		});	
-	})
-	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
-			document.getElementById('port_pop_pic_bg').classList.remove("active")
-			document.getElementById('port_pop_pic').classList.remove("active")
-	})
+	if ('serviceWorker' in navigator) {
+  //navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+  navigator.serviceWorker.register('service-worker.js').then(function(registration){
+	console.log('ServiceWorker registration successful!');
+  }).catch(function(err) {
+	console.log('ServiceWorker registration failed: ', err);
+  });
+}
+</script><script type="application/ld+json">
+{"@context":"https://schema.org/","@type":"SiteNavigationElement","name":["Find Doctors","Health & Fitness App","Find Clinic/Hospital","Health Articles/Tips","Drlogy For Professionals","About Us"],"description":["Find best Doctors near you. View Profile, Visiting Hospitals/Clinics, Fee, User Likes, photos, address, maps and timing of best doctors near me","Store medical records, Medicine reminder, Tracker your food, water, Exercise, symptoms, menstrual cycles & read health article by downloading Drlogy health & fitness App.","Find best Clinic/Hospitals near you. View Doctors, photos, address, maps, fee, timing, procedures, user likes and amenities of the best Clinics/Hospitals near me","Read best health articles and tips published by verified Doctors.","Free Profile Listing of Doctors and Clinics/Hospitals with Higher Online Visibility.","Drlogy creates a single healthcare platform for patient, professional and practice to access anytime, anywhere and anyway."],"url":["https://drlogy.com/doctors/","health-and-fitness-app-drlogy-app/index.html","hospitals/index.html","health-article/index.html","professionals/doctor-hospital-clinic-profile/index.html","https://drlogy.com/about/"]}
 </script>
-<!--chatbot
--->
-<!-- custom js file link  -->
-<script src="jsks/script.js"></script>
 
-</body>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","url":"https://drlogy.com/","potentialAction":{"@type":"SearchAction","target":"https://drlogy.com/search.html?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+
+<div class="hm-0">
+	<div class="container">
+	<div>
+	<h1 class="hm-ht">Find Health Near </h1>
+	</div>
+		<!-- Search page Code start -->
+<div class="container ser-inx">
+	<div class="row hp pc-jut">
+		<div class="ser-in1">
+						<i class="material-icons ser-map">room</i>
+			<input type="hidden" name="hdncityid" value="Rajkot">
+			<input placeholder="Search City/Locality" id="fr-locality" name="dsktop_location" value="Rajkot" type="text" class="validate lcimp">
+			<input type="hidden" id="loc-id" name="loc-id">
+			<input type="hidden" name="search_tag" value="">
+			<div class="pc-swa pc-jut" id="location-parnt" style="display: none;">
+				<p class="pc-swgt"><span class="curr-loc">Get My Current Location</span></p>
+				<div class="location-list">
+				</div>
+			</div>
+		</div>
+		<div class="ser-in2">
+						<input placeholder="Search Speciality, Doctors, Clinics, Hospitals, Tests, Diagnostics, Pharmacy, Services" id="fr-locali12" name="search_query" type="text" class="validate " value=""></input>
+			<input type="hidden" name="srch-id" id="srch-id">
+			<div class="pc-swa srch-glob" id="search-parent">
+			</div>	
+		</div>
+		<div class="ser-resp1">
+			<input placeholder="Search Speciality, Doctors, Clinics, Hospitals, Tests, Diagnostics, Pharmacy, Services" id="fr-locali122" name="search_query" type="text" class="validate " value=""></input>
+			<input type="hidden" name="srch-id" id="srch-id">
+		</div>
+	</div>
+</div>
+<!-- End search Page code -->		<!-- <div class="pc-srxa hidden-md hidden-sm hidden-lg hidden-xs">
+	<div class="input-field sr_mdl1 pc-jut">
+		<input id="last_name" type="text" class="validate" placeholder="Search Speciality, Doctors, Clinics, Hospitals" value="">
+		<i class="material-icons sc-wht">search</i>
+	</div>
+</div> -->
+
+<div class="modal fade" id="sr-omdl1" role="dialog">
+	<div class="modal-dialog sr-odig">
+		<div class="modal-content">
+			<div class="modal-body sr-odig1">
+				<h3 class="sr-xca"><span>Search</span><i class="material-icons" data-dismiss="modal">close</i></h3>
+				<div class="sr-xcb">
+					<div class="input-field clearfix">
+						<i class="material-icons mob-si-1 active">location_on</i>
+						<input name="mobile_location" class="validate mob-si-2" placeholder="Search City/Locality" type="text" value="Rajkot">
+						<input type="hidden" id="loc-id" name="loc-id">
+						<div class="pc-swa">
+							<div class="location-list-mobile pc-jut">
+							</div>
+						</div>
+					</div>
+					<div class="input-field clearfix">
+						<i class="material-icons mob-si-1">search</i>
+						<input id="srhid2" class="validate mob-si-2" placeholder="Search Speciality, Doctors, Clinics, Hospitals" name="search_query_mobile" type="text" value="">
+
+						<input type="hidden" name="mobile-srch-id" id="mobile-srch-id">
+						<div class="pc-swa srch-glob" id="mobile-loc-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	</div>	
+</div>	
+
+<div class="hmc-0">
+	<div class="container app-ct">
+		<h2 class="s3h-0">Health Tips by Experts</h2>
+		<div class="row hmc0">
+			<a class="hmc-1 pc-jut" href="health-article/five-magical-foods-for-a-healthy-heart.html">
+				<img class="hmc-2 lazyload" src="assets/uploads/img/loop/41f77453dae8f029f2c08eeb69a7f5c8.jpg" alt="Five Magical Foods for a Healthy Heart - Drlogy">
+				<h3 class="hmc-3">Five Magical Foods for a Healthy Heart</h3>
+			</a>
+			<a class="hmc-1 pc-jut" href="health-article/5-tips-to-prevent-acidity.html">
+				<img class="hmc-2 lazyload" src="assets/uploads/img/loop/c06d6e0e9e7dff06ff0f6e16e8025b01.jpg" alt="5 Tips to Prevent Acidity - Drlogy">
+				<h3 class="hmc-3">5 Tips to Prevent Acidity</h3>
+			</a>
+			<a class="hmc-1 pc-jut" href="food-facts/fruits/mango-12-glorious-health-benefits-nutrition-profile.html">
+				<img class="hmc-2 lazyload" src="assets/uploads/img/admin/knowledgefeed/thumb/6b074d121ee6559454aff3e9078dbad4.jpg" alt="Mango 12 Glorious Health Benefits & Nutrition Profile - Drlogy">
+				<h3 class="hmc-3">Mango 12 Glorious Health Benefits & Nutrition Profile</h3>
+			</a>
+		</div>
+		<div class="hmc-4">
+			<a href="health-article.html" class="hm-0btn btn">View More Articles</a>
+		</div>
+	</div>
+</div>
+
+<div class="ha-123">
+	<div class="container app-ct">
+		<h2 class="s3h-0">Resolve Your Health Queries</h2>
+		<div class="row gw-01">
+			<div class="sh3-00 pc-jut">
+				<img class="sh-mi lazyload" src="assets/uploads/img/general/home-icon/hcal.png" alt="Fitness & Health Calculators - Drlogy">
+				<h3 class="sh3-01">Fitness & Health Calculators</h3>
+				<p class="sh3-02">Now You Can Easily Calculate Daily Health & Fitness Indices.</p>
+				<a href="health-and-fitness-calculator.html" class="hm-kn">Know More</a>
+			</div>
+			<div class="sh3-00 pc-jut">
+				<img class="sh-mi lazyload" src="assets/uploads/img/general/home-icon/medi.png" alt="Medical Dictionary - Drlogy">
+				<h3 class="sh3-01">Medical Dictionary</h3>
+				<p class="sh3-02">Know medical Terminology or Meaning for better understanding to Health</p>
+				<a href="medical-dictionary/a.html" class="hm-kn">Know More</a>
+			</div>
+			<div class="sh3-00 pc-jut">
+				<img class="sh-mi lazyload" src="assets/uploads/img/general/home-icon/abbr.png" alt="Medical Abbreviations - Drlogy">
+				<h3 class="sh3-01">Medical Abbreviations</h3>
+				<p class="sh3-02">You can Easily Decode the medical Abbreviations/Acronyms.</p>
+				<a href="medical-abbreviations/a.html" class="hm-kn">Know More</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="hmap-01">
+	<div class="container">
+		<div class="row hm-ap1">
+			<img  class="wf-mobile lazyload" src="assets/uploads/img/general/drlogy-app/box-01.svg" alt="A Step Towards Better Healthcare - Drlogy"> 
+			<div class="wf-gl01">
+				<div class="wb_rtc pr_hmx2">
+					<h2 class="hmap-0">Health &amp; Fitness - Drlogy App</h2>
+					<h3 class="hmap-1">A Step Towards Better Healthcare</h3>
+						<ul class="hmap-2">
+							<li>Find Doctors & Clinics/Hospital Near by You</li>
+							<li>Fitness & Home Workouts</li>
+							<li>Fitflo</li>
+							<li>Store Medical Records</li>
+							<li>Medicines Reminder</li>
+							<li>Health Tracker</li>
+							<li>Health &amp; Fitness Calculator</li>
+							<li>Medical Abbreviations &amp;  Dictionary</li>
+							<li>Health Articles & Food Facts</li>
+						</ul>
+					<h4 class="hmap-4">Download Drlogy Healthcare App &amp; Live Healthy</h4>
+					<div class="hmap-3">
+						<a href="http://bit.ly/drlogyapp"><img class="hmap-g pc-jut lazyload" src="assets/uploads/img/general/drlogy-app/g-play-logo.png" alt="Drlogy App"></a>
+						<a href="health-and-fitness-app-drlogy-app.html" class="hm-0btn btn">See All Features</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ha-cmpd">
+	<div class="container app-ct row">
+		<div class="sh-0">
+			<h2 class="sh-1">Are You A Smart Doctor?</h2>
+			<p class="sh-2">Clinic SAAS A new innovation in practice management to quickly grow your practice & improve the patient experience.</p>	
+			<a class="btn pr-btn" href="https://bit.ly/clinic-dr">Know more</a>
+		</div>
+	</div>
+</div>
+
+<div class="hmap-01" style="margin-bottom: -20px;">
+	<div class="container app-ct row">
+		<div>
+			<h2 class="hmap-0">About Drlogy</h2>
+			<p class="abt-0">Drlogy creates a single healthcare platform for patients, professionals, and practices to access anytime, anywhere, and anyway.<br/><br/>Drlogy provides one-touch healthcare solutions to empower the user quick and easy store health records, track fitness activities, access to Doctors and practices, health information and many more surprising things.<br/><br/>We help practices improve the depth of their relationships with patients and improve practice efficiency. Our core is in helping practices through tools like online appointments and practice management, but we’re always building new products and services.</p>
+		</div>
+	</div>
+</div>
+<!-- Apply Job -->
+<div class="modal fade" id="apply-job" role="dialog">
+	<div class="modal-dialog">
+	<!-- Modal content-->
+		<div class="modal-content pc-profile-view">
+			<form id="apl_job_post">
+				<div class="modal-body">
+					<input type="hidden" name="job_id" id="job_id" />
+						<h5 class="hr-mdlhed"></h5>
+							<p class="jb-cdsm"></p>
+							<p class="jb-cdsm"></p>
+					<div class="clearfix row mr-top15">
+						<div class="input-field">
+							<label for="fname">First Name</label>
+							<input type="text" name="fname" id="fname" />
+						</div>
+						<div class="input-field">
+							<label for="sname">Surname</label>
+							<input type="text" name="sname" id="sname" />
+						</div>
+					</div>
+					<div class="clearfix row mr-top15">
+						<div class="input-field">
+							<label for="mno">Mobile Number</label>
+							<input type="text" name="mno" id="mno" maxlength="10" />
+						</div>
+						<div class="input-field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+					</div>
+					<div class="clearfix mr-top15 row">
+						<div class="input-field jb-mtxta">
+							<textarea name="message" id="message" class="materialize-textarea"></textarea>
+							<label for="message">Message</label>
+						</div>
+					</div>
+					<div class="clearfix mr-top15 fld file-field">
+						<div class="btn btn-primary btn-sm jb-bny">
+							<span class="pc-lf-cho">Choose file</span>
+							<input name="resume" type="file" placeholder="Upload your Resume/CV">
+						</div>			
+						<div class="file-path-wrapper">
+							<input class="file-path validate" placeholder="Upload your Resume/CV" type="text" readonly="readonly">
+						</div>
+					</div>					
+				</div>
+				<div class="modal-footer jb-mft">
+					<button class="btn btn-save">save</button>
+					<button class="btn btn-cancel" data-dismiss="modal">cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="dr-foot">
+	<div class="container">
+		<div class="row dr-foot2">
+				<ul class="dr-foot3">
+					<li class="dr-foot1">For Patients</li>
+					<li><a href='doctors.html'>Doctors</a></li>
+					<li><a href='hospitals.html'>Clinics/Hospitals</a></li>
+					<li><a href='diagnostics.html'>Diagnostics</a></li>
+					<li><a href='pharmacys.html'>Pharmacies</a></li>
+					<li><a href='pharmas.html'>Pharmas</a></li>
+					<li><a href='associations.html'>Associations</a></li>
+					<li><a href='agencies.html'>Agencies</a></li>
+					<li><a href='job.html'>Jobs</a></li>
+				</ul>
+				<ul class="dr-foot3">
+					<li class="dr-foot1">Health Refresh</li>
+					<li><a href="health-article.html">Health Articles</a></li>
+					<li><a href='food-facts/all-foods.html'>Food Facts</a></li>
+					<li><a href='health-and-fitness-calculator/index.html'>Fitness & Health Calculators</a></li>
+					<li><a href='medical-dictionary/a.html'>Medical Dictionary</a></li>
+					<li><a href='medical-abbreviations/a.html'>Medical Abbreviations</a></li>
+				</ul>
+				<ul class="dr-foot3">
+					<li class="dr-foot1">Drlogy App</li>	
+					<li><a href='health-and-fitness-app-drlogy-app.html'>Drlogy App</a></li>
+					<li><a href='best-doctor-hospital-clinic-near-me-drlogy-app.html'>Find Doctors & Hospitals</a></li>
+					<li><a href='best-fitness-app-drlogy-app.html'>Fitness</a></li>
+					<li><a href='signs-symptoms-period-tracker-app-drlogy-app.html'>Fitflo</a></li>
+					<li><a href='best-medical-health-records-app-drlogy-app.html'>Store Medical Records</a></li>
+					<li><a href='best-medicine-reminder-app-drlogy-app.html'>Medicines Reminder</a></li>
+					<li><a href='best-health-tracker-app-drlogy-app.html'>Health Trackers</a></li>
+					<li><a href='health-and-fitness-calculators-app-drlogy-app.html'>Fitness & Health Calculators</a></li>
+					<li><a href='health-tips-articles-app-drlogy-app.html'>Health Articles & Food Facts</a></li>
+					<li><a href='best-medical-dictionary-and-abbreviation-app-drlogy-app.html'>Medical Dictionary & Acronyms</a></li>
+				</ul>
+				<ul class="dr-foot3">
+					<li class="dr-foot1">For Professionals</li>
+					<li> <a href="clinic-saas.html">Clinic Software</a></li>
+					<li> <a href="professionals/doctor-hospital-clinic-profile.html">Doctor</a></li>
+					<li> <a href="professionals/diagnostic-lab-imaging-centre-profile.html">Diagnostic</a></li>
+					<li> <a href="professionals/pharmacy-medical-store-profile.html">Pharmacy</a></li>
+					<li> <a href="professionals/pharma-surgical-manufacturer-profile.html">Pharma</a></li>
+					<li> <a href="professionals/association-profile.html">Associations</a></li>
+					<li> <a href="professionals/agency-stockist-distributer-profile.html">Agency</a></li>
+				</ul>
+				<ul class="dr-foot3">
+					<li class="dr-foot1">Drlogy</li>
+					<li><a href='about.html'>About Us</a></li>
+					<li><a href='blog.html'>Blog</a></li>
+					<li><a class="cnt-req-lgn" href='contact.html'>Contact Us</a></li>
+					<li><a href="career.html">Careers</a></li>					
+					<li><a href='terms.html'>Terms of Use</a></li>
+					<li><a href='privacy.html'>Privacy Policy</a></li>
+					<li><a href='subscriber.html'>Subscribers</a></li>
+				</ul>
+				<ul class="dr-foot3">
+					<li class="dr-foot1">Keep in touch</li>
+					<!--  -->
+					<li><a target="_blank" rel="noopener" href="https://www.facebook.com/Drlogy4Health/">Facebook</a></li>
+					<li><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCY02NzH5yGQnuF4e9D0N_EQ">Youtube</a></li>
+					<li><a target="_blank" rel="noopener" href="https://twitter.com/Drlogy_/">Twitter</a></li>
+					<li><a target="_blank" rel="noopener" href="https://www.linkedin.com/company/drlogy">Linkedin</a></li>
+					<li><a target="_blank" rel="noopener" href="https://www.instagram.com/drlogy_/">Instagram</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="yq52"><b>Dr</b><span>logy<span class="drr-1">®</span></span></div>
+	<div class="yqt52">The Power To Health</div>
+	<div class="yqt52"><p>Copyright © 2022 Drlogy. All rights reserved.<p></div>
+</div>
+	<script src="assets/plugins-v1/common-css-js/js/bootstrap-jqry-mdb.js"></script>
+			<script src="assets/drlogy-pro-v3/profile/js/js_functions.js"></script>
+	<script src="assets/user-v1/js/frnt-cmn.js"></script>	
+	<script src="assets/user-v1/js/page/hospital_drlogyNew.js"></script><script src="assets/user-v1/js/search.js"></script>	</body>
+
+<!-- Mirrored from drlogy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Feb 2022 17:22:32 GMT -->
 </html>
